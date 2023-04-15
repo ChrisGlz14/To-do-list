@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(81,189,212);
+    background: radial-gradient(circle, rgba(81,189,212,1) 0%, rgba(81,135,212,1) 73%, rgba(81,81,212,1) 100%);
+    padding: 20px;
+}
+
+.todo-app {
+    width: 100%;
+    max-width: 540px;
+    background-color: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px; 
+}
+
+.todo-app h2 {
+    color: #233;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-family: 'Kaushan Script';
+}
+
+.todo-app h2 img {
+    width: 60px;
+    margin-left: 10px;
+}
+
+.row {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(81,81,212);
+    background: linear-gradient(180deg, rgba(81,81,212,0.5046393557422969) 0%, rgba(81,189,212,1) 100%);
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background:transparent;
+}
+
+input::placeholder {
+    color: #000000;
+}
+
+button {
+border: none;
+outline: none;
+padding: 16px 40px;
+background: rgb(18, 165, 11);
+color: #fff;
+font-size: 15px;
+border-top-right-radius:30px;
+border-bottom-right-radius: 30px;
+cursor: pointer;
+}
+
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 40px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(img/wall-clock.png);
+    background-size: cover;
+    background-position: center;
+    top: 8px;
+    left: 8px;
+}
+
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.checked::before {
+    background-image: url(img/cheque.png);
+    background-size: cover;
+    background-position: center;
+    top: 8px;
+    left: 8px;
+}
+
+ul li span {
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    width: 20px;
+    height: 20px;
+    font-size: 28px;
+    text-align: center; 
+}
+
+ul li span:hover {
+color: #aa2424;
+}
+
