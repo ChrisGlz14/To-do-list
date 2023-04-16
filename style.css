@@ -73,6 +73,12 @@ border-top-right-radius:30px;
 border-bottom-right-radius: 30px;
 cursor: pointer;
 }
+@media screen and (min-width:390px){ 
+    .button {
+        width: 100px;
+    }
+}
+
 
 ul li {
     list-style: none;
