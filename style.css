@@ -50,9 +50,10 @@
     margin-bottom: 25px;
 }
 
+
 input {
     flex: 1;
-    padding: 10px;
+    padding: 5px;
     border: none;
     outline: none;
     background:transparent;
@@ -73,9 +74,10 @@ border-top-right-radius:30px;
 border-bottom-right-radius: 30px;
 cursor: pointer;
 }
-@media screen and (min-width:390px){ 
-    .button {
-        width: 100px;
+
+@media  screen and (max-width : 500px) {
+    button {
+        padding: 16px 20px 16px 20px;
     }
 }
 
